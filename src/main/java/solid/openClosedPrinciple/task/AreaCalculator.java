@@ -6,6 +6,7 @@ package solid.openClosedPrinciple.task;
  * and define the behavior that varies in this abstraction,
  * 3. Then implement this abstraction in each of the object classes, providing their own implementation of the behavior,
  * 4. and use the abstraction instead of the concrete classes where the behavior is needed.
+ * 5. Add one more method which will calculate the total area of all the shapes passed in as a list.
  */
 public class AreaCalculator {
 
