@@ -1,5 +1,10 @@
 package solid.liskovSubstitutionPrinciple.task;
 
+/**
+ * 1. Identify methods that aren't applicable to all subclasses.
+ * 2. Consider splitting the superclass or contract interface into more specific subclasses or interfaces.
+ * 3. Ensure that each subclass or implementation can be used interchangeably with the superclass without causing any issues.
+ */
 abstract class Vehicle {
     abstract void refuel();
 
