@@ -1,4 +1,4 @@
-package singleDesignPattern.practicalLoggerExample;
+package singletonDesignPattern.practicalLoggerExample;
 
 import java.io.IOException;
 

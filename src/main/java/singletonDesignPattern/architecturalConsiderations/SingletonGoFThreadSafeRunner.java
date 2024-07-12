@@ -1,4 +1,4 @@
-package singleDesignPattern.architecturalConsiderations;
+package singletonDesignPattern.architecturalConsiderations;
 
 public class SingletonGoFThreadSafeRunner {
 

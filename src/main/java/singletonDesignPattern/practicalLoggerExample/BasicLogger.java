@@ -1,4 +1,4 @@
-package singleDesignPattern.practicalLoggerExample;
+package singletonDesignPattern.practicalLoggerExample;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -6,24 +6,12 @@ import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.time.LocalDateTime;
 
-public class SingletonLogger {
-    private static SingletonLogger instance;
+public class BasicLogger {
     private PrintWriter writer;
 
-    private SingletonLogger(String fileName) throws IOException {
-        // Private constructor with file initialization
+    public BasicLogger(String fileName) throws IOException {
+        // Open the given file in append mode.
         writer = new PrintWriter(new FileWriter(fileName, true));
-    }
-
-    public static synchronized SingletonLogger getInstance(String fileName) {
-        if (instance == null) {
-            try {
-                instance = new SingletonLogger(fileName);
-            } catch (IOException e) {
-                throw new RuntimeException("Failed to initialize logger", e);
-            }
-        }
-        return instance;
     }
 
     public void log(String message) {
