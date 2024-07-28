@@ -1,0 +1,32 @@
+/* theme_blue.css */
+.root {
+    -fx-background-color: #0000FF; /* Blue background */
+    -fx-text-fill: #FFFF00; /* Yellow text */
+}
+
+.button, .combo-box  {
+    -fx-background-color: linear-gradient(#0066ff, #000088); /* Gradient blue for a 3D effect */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 5); /* Drop shadow for depth */
+    -fx-border-color: #000055; /* Dark blue border */
+    -fx-border-width: 2; /* Border width for prominence */
+    -fx-text-fill: #ffff00; /* Yellow text for high contrast */
+}
+
+/* Styling for list-cell within combo-box to maintain visibility and aesthetic */
+.combo-box .list-cell {
+    -fx-background-color: #0000FF; /* Consistent with root background */
+    -fx-text-fill: #FFFF00; /* Consistent with root text color for visibility */
+}
+
+/* Hover and selection styling for list cells to enhance interaction visibility */
+.combo-box .list-cell:filled:hover,
+.combo-box .list-cell:filled:selected,
+.combo-box .list-cell:filled:selected:hover {
+    -fx-background-color: #0044FF; /* Lighter blue to indicate hover or selection */
+    -fx-text-fill: #FFFFFF; /* White text to enhance readability */
+}
+
+.label, /* Specific targeting if your labels have a 'label' style class */
+Label {  /* General targeting for all Label controls */
+    -fx-text-fill: #FFFF00; /* Ensuring all labels have white text */
+}

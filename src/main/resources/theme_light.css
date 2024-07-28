@@ -1,0 +1,12 @@
+/* theme_light.css */
+.root {
+    -fx-background-color: #F0F0F0; /* Light gray background */
+    -fx-text-fill: #000000; /* Black text */
+}
+.button, .combo-box  {
+    -fx-background-color: linear-gradient(#ffffff, #cccccc);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 5);
+    -fx-border-color: #aaaaaa;
+    -fx-border-width: 2;
+    -fx-text-fill: #333333;
+}
