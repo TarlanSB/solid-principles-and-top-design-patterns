@@ -2,6 +2,7 @@ package factoryMethodDesignPattern.shapedrawer.gui;
 
 import factoryMethodDesignPattern.shapedrawer.factory.ShapeFactory;
 import factoryMethodDesignPattern.shapedrawer.shapes.ShapeType;
+import factoryMethodDesignPattern.shapedrawer.shapes.Shape;
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,8 +15,8 @@ import java.util.Random;
  * the logic for drawing random shapes.
  */
 public class ShapeDrawer extends JFrame {
-    private DrawingPanel drawingPanel; // Panel where shapes will be drawn
-    private JLabel shapeNameLabel; // Label to display the name of the currently drawn shape
+    private final DrawingPanel drawingPanel; // Panel where shapes will be drawn
+    private final JLabel shapeNameLabel; // Label to display the name of the currently drawn shape
 
     /**
      * Constructor for ShapeDrawer. It sets up the GUI components including the drawing panel,
@@ -98,7 +99,7 @@ public class ShapeDrawer extends JFrame {
      */
     private static class DrawingPanel extends JPanel {
         private Shape currentShape = null; // The current shape to be drawn
-        private ShapeDrawer shapeDrawer; // Reference to the containing ShapeDrawer
+        private final ShapeDrawer shapeDrawer; // Reference to the containing ShapeDrawer
 
         DrawingPanel(ShapeDrawer shapeDrawer) {
             this.shapeDrawer = shapeDrawer;
