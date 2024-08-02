@@ -14,8 +14,8 @@ public class Main {
     public static void main(String[] args) {
         // Instance of ResourceLoader to load data
         ResourceLoader loader = new ResourceLoader();
-        String xmlData = loader.loadResource("contacts.xml");
-        String jsonData = loader.loadResource("contacts.json");
+        String xmlData = loader.loadResource("contacts/contacts.xml");
+        String jsonData = loader.loadResource("contacts/contacts.json");
 
         // Readers specific to XML and JSON
         XmlReader xmlReader = new XmlReader();
