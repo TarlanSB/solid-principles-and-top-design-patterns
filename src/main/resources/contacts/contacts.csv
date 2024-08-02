@@ -1,0 +1,11 @@
+fullName,email,phoneNumber,friend
+Alice Johnson,alice.johnson@example.com,555-0101,true
+Bob Smith,bob.smith@example.com,555-0102,false
+Carol White,carol.white@example.com,555-0103,true
+David Brown,david.brown@example.com,555-0104,false
+Eva Green,eva.green@example.com,555-0105,true
+Frank Harris,frank.harris@example.com,555-0201,true
+Grace Lee,grace.lee@example.com,555-0202,false
+Henry King,henry.king@example.com,555-0203,true
+Ivy Moore,ivy.moore@example.com,555-0204,false
+Jack Black,jack.black@example.com,555-0205,true

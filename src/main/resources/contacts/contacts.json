@@ -1,0 +1,34 @@
+{
+    "contacts": [
+        {
+            "fullName": "Frank Harris",
+            "email": "frank.harris@example.com",
+            "phoneNumber": "555-0201",
+            "friend": true
+        },
+        {
+            "fullName": "Grace Lee",
+            "email": "grace.lee@example.com",
+            "phoneNumber": "555-0202",
+            "friend": false
+        },
+        {
+            "fullName": "Henry King",
+            "email": "henry.king@example.com",
+            "phoneNumber": "555-0203",
+            "friend": true
+        },
+        {
+            "fullName": "Ivy Moore",
+            "email": "ivy.moore@example.com",
+            "phoneNumber": "555-0204",
+            "friend": false
+        },
+        {
+            "fullName": "Jack Black",
+            "email": "jack.black@example.com",
+            "phoneNumber": "555-0205",
+            "friend": true
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<contacts>
+    <contact>
+        <fullname>Alice Johnson</fullname>
+        <email>alice.johnson@example.com</email>
+        <phoneNumber>555-0101</phoneNumber>
+        <friend>true</friend>
+    </contact>
+    <contact>
+        <fullname>Bob Smith</fullname>
+        <email>bob.smith@example.com</email>
+        <phoneNumber>555-0102</phoneNumber>
+        <friend>false</friend>
+    </contact>
+    <contact>
+        <fullname>Carol White</fullname>
+        <email>carol.white@example.com</email>
+        <phoneNumber>555-0103</phoneNumber>
+        <friend>true</friend>
+    </contact>
+    <contact>
+        <fullname>David Brown</fullname>
+        <email>david.brown@example.com</email>
+        <phoneNumber>555-0104</phoneNumber>
+        <friend>false</friend>
+    </contact>
+    <contact>
+        <fullname>Eva Green</fullname>
+        <email>eva.green@example.com</email>
+        <phoneNumber>555-0105</phoneNumber>
+        <friend>true</friend>
+    </contact>
+</contacts>
