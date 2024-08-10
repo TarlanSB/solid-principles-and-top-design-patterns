@@ -1,4 +1,3 @@
-
 package com.tsb.stateDesignPattern.mediaplayer.controller;
 
 import javafx.scene.media.Media;

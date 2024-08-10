@@ -1,9 +1,6 @@
 package com.tsb.stateDesignPattern.mediaplayer.ui;
 
-import com.tsb.stateDesignPattern.mediaplayer.controller.MediaPlayerContext;
-import com.tsb.stateDesignPattern.mediaplayer.controller.PausedState;
-import com.tsb.stateDesignPattern.mediaplayer.controller.PlayingState;
-import com.tsb.stateDesignPattern.mediaplayer.controller.State;
+import com.tsb.stateDesignPattern.mediaplayer.controller.*;
 import com.tsb.stateDesignPattern.mediaplayer.visualization.VisualizationStrategy;
 import com.tsb.stateDesignPattern.mediaplayer.visualization.WaveformVisualization;
 import javafx.application.Application;
@@ -22,12 +19,10 @@ import javafx.util.Duration;
 
 import java.io.File;
 
-
-
 public class MediaPlayerUI extends Application {
-    private MediaPlayerContext player = new MediaPlayerContext();
+    private final MediaPlayerContext player = new MediaPlayerContext();
     private Canvas canvas;
-    private VisualizationStrategy visualizationStrategy = new WaveformVisualization();
+    private final VisualizationStrategy visualizationStrategy = new WaveformVisualization();
     private Label trackInfoLabel;
     private Label trackNameLabel;
     private Label stateLabel;
@@ -181,7 +176,7 @@ public class MediaPlayerUI extends Application {
     private void updateStateLabel() {
         if (player.getMediaPlayer() != null) {
             State state = player.getState();
-            String stateText = "";
+            String stateText;
 
             if (state instanceof PlayingState) {
                 stateText = "Playing";
@@ -215,11 +210,7 @@ public class MediaPlayerUI extends Application {
             stopButton.setDisable(false);
             loadButton.setDisable(true);
         } else if (state instanceof StoppedState) {
-            if (player.getMediaPlayer() != null) {
-                playButton.setDisable(false);
-            } else {
-                playButton.setDisable(true);
-            }
+            playButton.setDisable(player.getMediaPlayer() == null);
             pauseButton.setDisable(true);
             stopButton.setDisable(true);
             loadButton.setDisable(false);

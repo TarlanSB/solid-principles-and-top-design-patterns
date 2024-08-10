@@ -1,4 +1,3 @@
-
 package com.tsb.stateDesignPattern.mediaplayer.controller;
 
 // Interface defining the state transitions for a media player

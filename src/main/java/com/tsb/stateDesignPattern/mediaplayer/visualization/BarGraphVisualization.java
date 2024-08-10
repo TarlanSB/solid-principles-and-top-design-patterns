@@ -7,8 +7,6 @@ import javafx.scene.paint.Color;
 import java.io.IOException;
 import java.io.InputStream;
 
-
-
 public class BarGraphVisualization implements VisualizationStrategy {
     private VisualizationConfig config;
 
