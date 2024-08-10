@@ -1,0 +1,10 @@
+{
+  "backgroundColor": "#000000",
+  "waveformColor": "#00FF00",
+  "axisColor": "#AAAAAA",
+  "progressLineColor": "#FF0000",
+  "fontColor": "#FFFFFF",
+  "barColor": "#00FF00",
+  "exaggerationFactor": 2.0,
+  "numBars": 512 
+}
